@@ -1,0 +1,75 @@
+/* dialog */
+
+.dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.56);
+  z-index: 4;
+  overflow: auto;
+}
+.dialog {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 16px rgba(23, 27, 42, 0.24);
+  width: fit-content;
+  min-width: 420px;
+  max-width: 600px;
+  background-color: #ffffff;
+}
+
+/* header */
+.dialog__header {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 8px;
+}
+.dialog__header--left {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.dialog__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-label);
+}
+.dialog .icon-container {
+  width: auto;
+}
+.dialog .icon-btn::before {
+  font-size: 24px;
+}
+
+/* body */
+.dialog__content {
+  padding: 0px 24px 36px 24px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+.dialog .dialog__content .icon {
+  margin-right: 12px;
+  font-size: 24px;
+}
+
+/* footer */
+.dialog__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 8px;
+  padding: 0px 24px 24px 24px;
+}
+
+.dialog__footer .button-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  column-gap: 8px;
+}

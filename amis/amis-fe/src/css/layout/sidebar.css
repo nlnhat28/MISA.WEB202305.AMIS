@@ -1,0 +1,36 @@
+/* sidebar */
+.sidebar {
+  background-color: #202020;
+  min-width: 200px;
+  height: 100vh;
+}
+
+/* sidebar collapse */
+.sidebar--collapse {
+  min-width: 56px;
+  width: 56px;
+}
+
+.sidebar--collapse .menu-item__text,
+.sidebar--collapse .sidebar__header .logo {
+  display: none;
+}
+
+/* sidebar header */
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 0px 16px;
+  width: 100%;
+  min-height: 56px;
+}
+.logo {
+  background-image: url(@/assets/img/Logo_Module_TiengViet_White.66947422.svg);
+  height: 42px;
+}
+
+/* sidebar-body */
+.sidebar__body {
+  padding: 16px 0px;
+}

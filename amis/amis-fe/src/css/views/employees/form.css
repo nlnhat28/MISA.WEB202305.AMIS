@@ -1,0 +1,24 @@
+/* Style customer form */
+
+/* form */
+.form__body {
+  margin: 8px 0px;
+  row-gap: 32px;
+}
+.form__item:has(.input-icon:hover) {
+  z-index: 1;
+}
+
+/* popup */
+.popup {
+  width: 920px;
+  border: none;
+}
+.popup__header--left {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.icon--xmark {
+  filter: brightness(0.4) contrast(1);
+}

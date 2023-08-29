@@ -1,0 +1,16 @@
+/* search-box */
+.search-box {
+  caret-color: transparent;
+}
+.search-box .input-group:focus-within {
+  caret-color: auto;
+}
+
+/* search-result */
+.search-result {
+  display: flex;
+  /* color: var(--blue-500) */
+}
+.search-result pre.search-result__key {
+  margin: 0;
+}
