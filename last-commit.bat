@@ -5,8 +5,7 @@ for /f "delims=" %%c in ('git log -1 --format^="%%H: %%cd" --date=iso') do (
 for /f "delims=" %%m in ('git log -1 --format^="%%s by %%an"') do (
     set message=%%m
 )
-
-rem Output to lastCommit.js
 echo console.log("lastCommit:", "%commitHash%"); //%message% > amis/amis-fe/src/last-commit.js
 set commitHash=
+set message=
 
