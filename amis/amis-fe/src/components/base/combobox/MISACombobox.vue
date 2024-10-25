@@ -53,7 +53,6 @@
 </template>
 <script>
 import enums from '@/constants/enums.js';
-import { isReadOnly } from 'vue';
 import { debounce } from '@/js/utils/debounce.js';
 import { isNullOrWhiteSpace } from '@/js/utils/string.js'
 const direction = enums.direction;
