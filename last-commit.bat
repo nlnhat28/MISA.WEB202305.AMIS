@@ -2,7 +2,7 @@
 for /f "delims=" %%c in ('git log -1 --format^="%%H: %%cd" --date=iso') do (
     set commitHash=%%c
 )
-for /f "delims=" %%m in ('git log -1 --format^=%%s') do (
+for /f "delims=" %%m in ('git log -1 --format^="%%s by %%an"') do (
     set message=%%m
 )
 
