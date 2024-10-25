@@ -26,3 +26,4 @@ set commitHash=
 set message=
 
 endlocal
+
